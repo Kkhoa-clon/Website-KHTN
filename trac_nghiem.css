@@ -1,0 +1,88 @@
+/* Search Section */
+.search-section {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 350px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search:focus {
+    border-color: #2f855a;
+}
+
+/* Test List */
+.test-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    overflow-y: auto;
+    max-height: 60vh;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+/* Test Cards */
+.test-card {
+    background-color: #f9fafb;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto; /* Điều chỉnh chiều cao tự động */
+}
+
+.test-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.test-card h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* Test Image */
+.test-image {
+    width: 100%;        /* Chiếm toàn bộ chiều rộng của thẻ */
+    height: auto;       /* Chiều cao thay đổi theo tỉ lệ của ảnh */
+    max-height: 160px;  /* Giới hạn chiều cao ảnh nếu ảnh quá lớn */
+    object-fit: cover;  /* Đảm bảo ảnh luôn được căn chỉnh và cắt gọn */
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Khoảng cách giữa ảnh và tiêu đề */
+}
+
+/* Button to open quiz */
+.open-quiz {
+    background-color: #2f855a;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.open-quiz:hover {
+    background-color: #1d6f47;
+}

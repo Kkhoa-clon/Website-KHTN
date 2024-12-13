@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò Chơi Thực Hành</title>
+    <link rel="stylesheet" href="thuc_hanh.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="title">Khoa học Tự nhiên</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="https://www.coze.com/s/Zs8Ax1kqr/">Chat Bot</a></li>
+                    <li><a href="thuc_hanh.html">Thực Hành</a></li>
+                    <li><a href="trac_nghiem.html">Trắc Nghiệm</a></li>
+                    <li><a href="hoa_hoc.html">Hóa học</a></li>
+                    <li><a href="vat_ly.html">Vật lý</a></li>
+                    <li><a href="sinh_hoc.html">Sinh học</a></li>
+                    <li><a href="https://github.com/Kkhoa-clon">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Game List with Search -->
+    <div class="game-list-container">
+        <input type="text" id="searchBar" placeholder="Tìm kiếm trò chơi..." onkeyup="searchGames()">
+        <div class="game-list">
+            <ul id="gameContainer">
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_vi.html')">Sự Nổi Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_vi.html')">Hình Dạng Phân Tử</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_vi.html')">Dung Dịch Acid-Base</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/density/latest/density_vi.html')">Sóng Trên 1 Sợi Dây</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/generator/latest/generator_vi.html')">Máy Phát Điện</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets_vi.html')">Nam Châm Và Nam Châm Điện</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_vi.html')">Phòng Thí Nghiệm Điện Từ Faraday</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/projectile-data-lab/latest/projectile-data-lab_vi.html')">Phòng Thí Nghiệm Đạn Từ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/build-a-nucleus/latest/build-a-nucleus_vi.html')">Tạo Dựng Hạt Nhân</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/keplers-laws/latest/keplers-laws_vi.html')">Định Luật Kepler</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_vi.html')">Sóng Âm</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system_vi.html')">Thái Dương Hệ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/calculus-grapher/latest/calculus-grapher_vi.html')">Máy Vẽ Đồ Thị Vi Tích Phân</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/density/latest/density_vi.html')">Mật Độ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/natural-selection/latest/natural-selection_vi.html')">Chọn Lọc Tự Nhiên</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials_vi.html')">Biểu Hiện Gene Điều Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_vi.html')">Cực Tính Của Phân Tử</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/neuron/latest/neuron_vi.html')">Neuron</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_vi.html')">Thị Giác Màu</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_vi.html')">Thang Đo pH</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions_vi.html')">Phân Bố Mẫu Của Đạn</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability_vi.html')">Tâm Và Tính Biến Đổi</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/quadrilateral/latest/quadrilateral_vi.html')">Tứ Giác</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_vi.html')">So Sánh Số</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/number-play/latest/number-play_vi.html')">Vui Đùa Với Con Số</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect_vi.html')">Hiệu Ứng Nhà Kính</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics_vi.html')">Quang Hình Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_vi.html')">Quang Hình</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_vi.html')">Bộ Lắp Ráp Mạch AC</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab_vi.html')">Bộ Lắp Ráp Mạch AC Phòng Thí Nghiệm Ảo</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/normal-modes/latest/normal-modes_vi.html')">Kiểu Chuẩn Tắt</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_vi.html')">Tổng Hợp Sóng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_vi.html')">Đường Thẳng Số Khoảng Cách</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion_vi.html')">Tỷ Số Và Tỷ Lệ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_vi.html')"></a>Va Chạm</li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations_vi.html')">Đường Thẳng Số Các Phép Toán</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_vi.html')">Công Viên Ván Trược</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_vi.html')">Tạo Dựng Phân Tử</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_vi.html')">Đường Thẳng Số Nguyên</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations_vi.html')">Cộng Phương Trình Vector</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_vi.html')">Cộng Vector</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting_vi.html')">Vẽ Đường Cong Thực Nghiệm</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics_vi.html')">Lực Hấp Dẫn Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/waves-intro/latest/waves-intro_vi.html')">Sóng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_vi.html')">Sự Khuyết Tán</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_vi.html')">Giới Thiệu Chất Khí</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_vi.html')">Tính Chất Của Khí</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_vi.html')">Quang Phổ Của Thể Đen</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics_vi.html')">Con Lắc Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_vi.html')">Năng Lượng Các Dạng Và Sự Chuyển Hóa</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_vi.html')">Giao Thoa Sóng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers_vi.html')">Phân Số Hỗn Số</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_vi.html')">Phân Số Phần Giới Thiệu</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_vi.html')">Tạo Ra Một Phân Số</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_vi.html')">Phân Số : Đẳng Thức</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_vi.html')">Định Luật Comlomb</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_vi.html')">Đồ Thị Hàm Số Bậc 2</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_vi.html')">Con Lắc Lò Xò</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables_vi.html')">Đẳng Thức 2 Biến</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics_vi.html')">Đẳng Thức Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer_vi.html')">Đẳng Thức</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra_vi.html')">Đại Số Với Mô Hình Diện Tích</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals_vi.html')">Số Thập Phần Với Mô Hình Diện Tích</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication_vi.html')">Phép Nhân Với Mô Hình Diện Tích</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction_vi.html')">Giới Thiệu Mô Hình Diện Tích</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics_vi.html')">Tụ Điện Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_vi.html')">Con Lắc</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_vi.html')">Chuyển Động Của Đạn Tử</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange_vi.html')">Biểu Thức</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept_vi.html')">Đồ Thị Độ Dốc Đoạn Chắn</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics_vi.html')">Đồ Thị Hàm Số</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_vi.html')">Sân Chơi Tỷ Lệ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates_vi.html')">Tỷ Xuất Đơn Vị</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_vi.html')">Tạo Ra 10</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_vi.html')">Trạng Thái Của Vật Chất Phần Cơ Bản</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_vi.html')">Lực Hấp Dẫn Và Quỹ Đạo</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_vi.html')">Xác Xuất Plinko</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions_vi.html')">Tương Tác Nguyên Tử</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_vi.html')">Điện Tích Và Điện Trường</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_vi.html')">Táng Xạ Rutherford</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_vi.html')">Đồng Tử Nguyên Tử Khối</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_vi.html')">Vòng Tròn Lượng Giác</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_vi.html')">Khúc Xạ Ánh Sáng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_vi.html')">Số Học</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/hookes-law/latest/hookes-law_vi.html')">Định Luật Hooke</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_vi.html')">Phân Tử Và Ánh Sáng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_vi.html')">Hồi Quy Bình Phương Cực Tiểu</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_vi.html')">Chất Phản Ứng, Sản Phẩm, Phần Dư </a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/area-builder/latest/area-builder_vi.html')">Diện Tích</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/graphing-lines/latest/graphing-lines_vi.html')">Đồ Thị Hàm Số Tuyến Tính</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_vi.html')">Cân Bằng</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_vi.html')">Áp Suất</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/friction/latest/friction_vi.html')">Ma Sát</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_vi.html')">Lực Và Chuyển Động</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage_vi.html')">John Travoltage</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/concentration/latest/concentration_vi.html')">Nồng Độ</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_vi.html')">Bong Bóng Và Tĩnh Điện</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_vi.html')">Định Luật Beer</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/molarity/latest/molarity_vi.html')">Nồng Độ Mol</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_vi.html')">Định Luật Ohm</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_vi.html')">Điện Trở</a></li>
+                <li><a href="javascript:void(0);" onclick="loadGame('https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_vi.html')">Tạo Dựng Nguyên Tử</a></li>
+                <!-- Thêm các trò chơi khác vào đây -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Game Display (Overlay) -->
+    <div id="gameOverlay" class="game-overlay" style="display: none;">
+        <div class="game-overlay-content">
+            <button id="closeGame" onclick="closeGame()">Đóng trò chơi</button>
+            <iframe id="gameIframe" src="" width="800" height="600" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; KhoaNguyen</p>
+    </footer>
+
+    <script>
+        function loadGame(url) {
+            document.getElementById('gameOverlay').style.display = 'flex'; // Hiển thị lớp phủ trò chơi
+            document.getElementById('gameIframe').src = url; // Chỉnh URL của iframe thành trò chơi đã chọn
+        }
+
+        function closeGame() {
+            document.getElementById('gameOverlay').style.display = 'none'; // Ẩn lớp phủ khi đóng trò chơi
+            document.getElementById('gameIframe').src = ''; // Dừng trò chơi khi đóng
+        }
+
+        function searchGames() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('searchBar');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("gameContainer");
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

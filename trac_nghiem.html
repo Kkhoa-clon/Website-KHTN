@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>ChatBot Khoa Học Tự Nhiên</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="trac_nghiem.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="title">Khoa học Tự nhiên</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="chat_bot.html">Chat Bot</a></li>
+                    <li><a href="thuc_hanh.html">Thực Hành</a></li>
+                    <li><a href="trac_nghiem.html">Trắc Nghiệm</a></li>
+                    <li><a href="hoa_hoc.html">Hóa học</a></li>
+                    <li><a href="vat_ly.html">Vật lý</a></li>
+                    <li><a href="sinh_hoc.html">Sinh học</a></li>
+                    <li><a href="https://github.com/Kkhoa-clon">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <input type="text" id="search" placeholder="Tìm kiếm bài kiểm tra..." onkeyup="searchTests()">
+    </section>
+
+    <!-- Test List -->
+    <section class="test-list">
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="https://quizizz.com/embed/quiz/60bc81e1a75e27001c8e9fb0">
+                <img src="https://i.pinimg.com/236x/7b/af/38/7baf38e7efbbca144d5eb654c93d89dc.jpg" alt="" class="test-image">
+                <h3>KHTN 5</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="https://quizizz.com/embed/quiz/675c0e0e669f800956532cac">
+                <img src="https://i.pinimg.com/236x/8e/33/b2/8e33b2b854e9a76dd067591f4bcd7fd5.jpg" alt="" class="test-image">
+                <h3>KHTN 6</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="https://quizizz.com/embed/quiz/650b05a23cbf625b4ac5d188">
+                <img src="https://i.pinimg.com/236x/f8/ad/a9/f8ada965b209677f711b6219de3c1221.jpg" alt="" class="test-image">
+                <h3>KHTN 7</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="https://quizizz.com/embed/quiz/672821b6fb63aae099317d9d">
+                <img src="https://i.pinimg.com/236x/12/2f/aa/122faae3f662ff00b09364e018541fb4.jpg" alt="" class="test-image">
+                <h3>KHTN 8</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="https://quizizz.com/embed/quiz/671259af3e6f8842ce71faa5">
+                <img src="https://i.pinimg.com/736x/87/63/c2/8763c2b7c2503c3db3a49db6b396620f.jpg" alt="" class="test-image">
+                <h3>KHTN 9</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/8b/0d/8e/8b0d8e00d4029ba7b0bc6318dadf489f.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/ec/8c/3c/ec8c3ce641166d367a5ca907180ac807.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/78/44/79/7844793fb0dd56f365e645bfdff2e2c1.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/b4/2f/d2/b42fd20f900fab31e2f749e2a765c88a.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/02/14/73/0214735b18eec41b4aed614118cc989e.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/be/4c/a5/be4ca5986ad71ba5779a68e2a7ffc689.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/a8/f7/18/a8f718b5e02374e4e84b2d61d00a40d7.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/34/15/06/34150686d27e81d6368589115debb16e.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/736x/03/be/eb/03beeb371e234cdd278f41bf742f3458.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/dd/8e/0a/dd8e0a106cdb645aabfbac79111e82da.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/49/75/5b/49755bc3d2c2acaeafb69dad17bb64c9.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/d9/38/7e/d9387e57f33bb10595442deb4819651b.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/5e/43/d4/5e43d4200ea10ddf4c6b6070a00a35a2.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/a6/9f/9c/a69f9c669a59953854aa1e4e56c25681.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/17/82/32/178232f7b567b850d997507679afafbe.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/04/1b/5a/041b5a3d0fcc15cd1d490ad202e7b373.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/db/ba/56/dbba567b212943e0405f989244ba58c0.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/cc/28/ab/cc28ab64e08efc6672b39c71c0ff7440.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/5c/49/8e/5c498efc366cff1d0cd6cd42fefbca7f.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="https://i.pinimg.com/236x/d6/3b/af/d63baf4b51b1636b393391a9c3789e25.jpg" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <div class="test-card">
+            <button class="open-quiz" data-quiz="">
+                <img src="" alt="" class="test-image">
+                <h3>Slot Trống</h3>
+            </button>
+        </div>
+        <!-- Thêm các card kiểm tra khác ở đây -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; KhoaNguyen</p>
+    </footer>
+
+    <script>
+        // JavaScript to open quiz when button is clicked
+        document.querySelectorAll('.open-quiz').forEach(button => {
+            button.addEventListener('click', function() {
+                const quizLink = this.getAttribute('data-quiz');
+                window.open(quizLink, '_blank'); // Mở link trong tab mới
+            });
+        });
+
+        // Function to filter tests based on search input
+        function searchTests() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.test-card');
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
