@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://kkhoa-clon.github.io/Website-KHTN/sitemap.xml

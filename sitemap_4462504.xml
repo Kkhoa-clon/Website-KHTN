@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/index.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/thuc_hanh.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/trac_nghiem.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/hoa_hoc.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/vat_ly.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://kkhoa-clon.github.io/Website-KHTN/sinh_hoc.html</loc>
+       <lastmod>2024-12-13T13:24:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+</urlset>
