@@ -9,34 +9,38 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: 'Arial', sans-serif;
     background-color: white;
-    color: #2f855a; /* Màu xanh lá */
-    overflow: hidden; /* Tắt thanh cuộn */
-    height: 100vh; /* Giới hạn chiều cao của trang */
+    color: #2f855a;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background-color: #2f855a; /* Màu xanh lá */
+    background-color: #2f855a;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #2f855a; /* Màu xanh lá */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #2f855a;
 }
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header nav ul {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 header nav ul li a {
@@ -44,93 +48,91 @@ header nav ul li a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: white;
 }
 
 /* Science Topics Section */
 .topics {
     display: flex;
-    justify-content: space-evenly; /* Căn giữa và phân bổ đều */
-    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
     background-color: white;
-    margin-bottom: 3rem;
 }
 
 .topic {
     background-color: white;
-    padding: 2rem;
-    width: 28%; /* Thu hẹp độ rộng của mỗi phần */
-    border: 2px solid #2f855a; /* Màu xanh lá */
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #2f855a;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0 1rem; /* Thêm khoảng cách giữa các phần */
 }
 
 .topic h3 {
-    font-size: 1.5rem;
-    color: #2f855a; /* Màu xanh lá */
+    font-size: 1.3rem;
+    color: #2f855a;
+    margin-bottom: 0.5rem;
 }
 
 .topic p {
-    font-size: 1rem;
-    color: #2f855a; /* Màu xanh lá */
+    font-size: 0.95rem;
+    color: #2f855a;
 }
 
 .topic:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Image Carousel Section */
 .image-carousel {
     background-color: white;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    overflow: hidden; /* Ẩn phần ảnh nằm ngoài khung */
-    position: relative;
+    overflow: hidden;
 }
 
 .carousel-container {
     display: flex;
     gap: 1rem;
-    width: calc(300px * 10); /* Tăng chiều rộng đủ lớn cho 2 bộ ảnh */
+    width: max-content;
     animation: slideImages 30s infinite linear;
 }
 
 .carousel-container img {
-    width: 300px; /* Kích thước mỗi ảnh */
-    height: 200px;
+    width: 280px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px; /* Bo góc cho ảnh */
-    border: 2px solid #2f855a; /* Viền ảnh */
+    border-radius: 8px;
+    border: 2px solid #2f855a;
 }
 
-/* Keyframes cho hiệu ứng mượt */
 @keyframes slideImages {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem;
-    background-color: #2f855a; /* Màu xanh lá */
+    padding: 1.5rem;
+    background-color: #2f855a;
     color: white;
+    margin-top: auto;
 }
 
-/* Hero Section with Background Image */
+/* Hero Section */
 .hero {
     background-image: url('https://snu.edu.in/site/assets/files/18079/test-tubes-with-plants-holder-blurred-background.1600x0.webp');
     background-size: cover;
@@ -138,22 +140,27 @@ footer {
     position: relative;
     color: white;
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 3rem 1rem;
     flex-grow: 1;
 }
 
-/* Hiệu ứng di chuyển vào cho tiêu đề */
 .hero-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
-    z-index: 2;
-    transform: translateY(50px); /* Bắt đầu từ dưới */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
     animation: slideIn 1s ease-out forwards;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.5s ease-out forwards;
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateY(50px);
+        transform: translateY(20px);
         opacity: 0;
     }
     100% {
@@ -162,46 +169,55 @@ footer {
     }
 }
 
-/* Mô tả */
-.hero-description {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    z-index: 2;
-    animation: slideIn 1.5s ease-out forwards;
-}
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    header {
+        padding: 1.5rem;
+    }
 
-/* Hiệu ứng đổ bóng cho tiêu đề */
-.hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    z-index: 2;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Đổ bóng */
-}
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.hero-description {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    z-index: 2;
-}
+    header nav ul {
+        margin-top: 0;
+        gap: 1.5rem;
+    }
 
-/* Responsive */
-@media (max-width: 768px) {
     .topics {
-        flex-direction: column;
-        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.3rem;
     }
 
     .topic {
-        width: 80%; /* Điều chỉnh chiều rộng cho các phần trong giao diện di động */
-        margin-bottom: 2rem;
-    }
-
-    .carousel-container {
-        flex-direction: column;
-        align-items: center;
+        padding: 2rem;
     }
 
     .carousel-container img {
-        width: 90%;
+        width: 300px;
+        height: 200px;
     }
 }
