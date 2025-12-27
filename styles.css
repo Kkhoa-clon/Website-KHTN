@@ -103,7 +103,7 @@ header nav ul li a {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: slideImages 30s infinite linear;
+    animation: slideImages 55s infinite linear;
 }
 
 .carousel-container img {
